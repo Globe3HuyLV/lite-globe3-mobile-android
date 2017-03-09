@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.globe3.tno.g3_lite_mobile"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile files('libs/acra.jar')
+    compile files('libs/jna.jar')
+    compile files('libs/neurotec-biometrics-android.jar')
+    compile files('libs/neurotec-biometrics-client-android.jar')
+    compile files('libs/neurotec-biometrics-gui-android.jar')
+    compile files('libs/neurotec-cluster-android.jar')
+    compile files('libs/neurotec-core-android.jar')
+    compile files('libs/neurotec-devices-android.jar')
+    compile files('libs/neurotec-devices-fscanners-bluefin-android.jar')
+    compile files('libs/neurotec-devices-fscanners-digitalpersona-uareu-android.jar')
+    compile files('libs/neurotec-devices-fscanners-futronic-android.jar')
+    compile files('libs/neurotec-devices-fscanners-futronic-bluetooth-android.jar')
+    compile files('libs/neurotec-devices-fscanners-integratedbiometrics-android.jar')
+    compile files('libs/neurotec-devices-fscanners-miaxis-android.jar')
+    compile files('libs/neurotec-devices-fscanners-nextbiometrics-android.jar')
+    compile files('libs/neurotec-devices-fscanners-nitgen-android.jar')
+    compile files('libs/neurotec-devices-fscanners-secugen-android.jar')
+    compile files('libs/neurotec-devices-fscanners-smufsbio-android.jar')
+    compile files('libs/neurotec-devices-fscanners-startek-android.jar')
+    compile files('libs/neurotec-devices-fscanners-suprema-biomini-android.jar')
+    compile files('libs/neurotec-devices-irisscanners-iritech-irishield-android.jar')
+    compile files('libs/neurotec-devices-media-android.jar')
+    compile files('libs/neurotec-devices-multimodal-credenceid-android.jar')
+    compile files('libs/neurotec-devices-virtual-android.jar')
+    compile files('libs/neurotec-face-verification-android.jar')
+    compile files('libs/neurotec-face-verification-gui-android.jar')
+    compile files('libs/neurotec-gui-android.jar')
+    compile files('libs/neurotec-licensing-android.jar')
+    compile files('libs/neurotec-licensing-gui-android.jar')
+    compile files('libs/neurotec-media-android.jar')
+    compile files('libs/neurotec-media-processing-android.jar')
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:support-v13:25.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile('com.frosquivel:magicalcamera:4.8@aar') {
+        transitive = false;
+    }
+    compile 'com.android.support:appcompat-v7:25.0.1'
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_staff_list"
+        android:title="@string/label_staff_list" />
+    <item
+        android:id="@+id/nav_timesheet_day"
+        android:title="@string/label_daily_timesheet" />
+    <item
+        android:id="@+id/nav_timesheet_staff"
+        android:title="@string/label_staff_timesheet" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EEEEEE</color>
+    <color name="colorPrimaryDark">#BDBDBD</color>
+    <color name="colorBorder">#BDBDBD</color>
+    <color name="colorBorderLight">#E0E0E0</color>
+    <color name="colorShadow">#BDBDBD</color>
+    <color name="colorAccent">#1976D2</color>
+    <color name="colorAccentLight">#2196F3</color>
+    <color name="colorAccentDark">#1565C0</color>
+    <color name="windowBackground">#FAFAFA</color>
+    <color name="windowBackgroundDark">#EEEEEE</color>
+
+    <color name="colorMenu">#9E9E9E</color>
+    <color name="colorMenuLight">#BDBDBD</color>
+    <color name="colorMenuDark">#757575</color>
+    <color name="colorActionBarHint">#E0E0E0</color>
+
+    <color name="colorFingerSelect">#E3F2FD</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLight">#424242</color>
+    <color name="colorBlueGrey">#78909C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#1976D2</color>
+    <color name="colorBlueDark">#1567b8</color>
+    <color name="colorBlueLight">#2196F3</color>
+    <color name="colorIndigo">#3F51B5</color>
+    <color name="colorIndigoLight">#303F9F</color>
+    <color name="colorGreen">#66BB6A</color>
+    <color name="colorGreenLight">#A5D6A7</color>
+    <color name="colorLimeGreen">#9CCC65</color>
+    <color name="colorLimeGreenLight">#C5E1A5</color>
+    <color name="colorTeal">#00796B</color>
+    <color name="colorTealLight">#009688</color>
+    <color name="colorOrange">#FFA726</color>
+    <color name="colorOrangeLight">#FFCC80</color>
+    <color name="colorSuccess">#66BB6A</color>
+    <color name="colorFailed">#EF5350</color>
+    <color name="colorInactive">#9E9E9E</color>
+    <color name="colorHint">#BDBDBD</color>
+    <color name="colorCancel">#ccdce9</color>
+    <color name="colorCancelPressed">#AABECE</color>
+
+    <color name="colorProgressStart">#EEEEEE</color>
+    <color name="colorProgressCenter">#E0E0E0</color>
+    <color name="colorProgressEnd">#BDBDBD</color>
+
+    <color name="colorBlueTransparent">#663875D6</color>
+    <color name="colorBlackTransparent">#66000000</color>
+    <color name="colorGreyTransparent">#A8BDBDBD</color>
+
+    <color name="colorDashboardGreen">#66BB6A</color>
+    <color name="colorDashboardGreenLight">#A5D6A7</color>
+    <color name="colorDashboardBlue">#42A5F5</color>
+    <color name="colorDashboardBlueLight">#90CAF9</color>
+    <color name="colorDashboardYellow">#FFEE58</color>
+    <color name="colorDashboardYellowLight">#FFF59D</color>
+    <color name="colorDashboardAmber">#FFB300</color>
+    <color name="colorDashboardAmberLight">#FFE082</color>
+
+    <color name="colorActiveTextBackground">#FFF9C4</color>
+
+    <color name="colorPhotoTakeBackground">#CC4285F4</color>
+    <!-- Neurotec -->
+    <color name="neurotec_black">#000000</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_verify_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.neurotec.biometrics.view.NFaceView
+            android:id="@+id/nFaceView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/bt_capture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_local_see_white_48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_total_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_face_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/label_verify_face"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/bt_face_recognition_settings"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitEnd"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_more_vert_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBorder" />
+
+        <LinearLayout
+            android:id="@+id/ll_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/colorLimeGreenLight"
+                android:gravity="center"
+                android:hint="@string/hint_select_project"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textAllCaps="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/windowBackground" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
